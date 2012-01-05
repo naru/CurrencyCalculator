@@ -1,12 +1,17 @@
 package com.cannedapps.currencycalculator;
 
-import roboguice.config.AbstractAndroidModule;
+import com.cannedapps.currencycalculator.app.views.CalculatorActivity;
+import com.cannedapps.currencycalculator.app.views.interfaces.ICalculatorActivity;
+import com.google.inject.AbstractModule;
 
-public class AppModule extends AbstractAndroidModule {
 
+public class AppModule extends AbstractModule {
+
+  public AppModule() {}
+  
   @Override
   protected void configure() {
-    //bind(ICalculatorActivity.class).to(CalculatorActivity.class);
+    bind(ICalculatorActivity.class).to(CalculatorActivity.class);
   }
   
 }

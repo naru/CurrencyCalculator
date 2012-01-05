@@ -7,7 +7,6 @@
     <uses-sdk android:minSdkVersion="10" />
 
     <application
-        android:name="com.cannedapps.currencycalculator.CurrencyCalculatorApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity

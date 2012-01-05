@@ -1,6 +1,7 @@
 package com.cannedapps.currencycalculator.app.views;
 
 import roboguice.activity.RoboActivity;
+import roboguice.inject.ContextSingleton;
 import roboguice.inject.InjectView;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.cannedapps.currencycalculator.app.presenters.CalculatorPresenter;
 import com.cannedapps.currencycalculator.app.views.interfaces.ICalculatorActivity;
 import com.google.inject.Inject;
 
+@ContextSingleton
 public class CalculatorActivity extends RoboActivity implements ICalculatorActivity {
   
   @InjectView(R.id.edittext) EditText mEditText;

@@ -16,5 +16,5 @@ public abstract class AbstractCannedappsPresenter<T> {
   public Activity getActivity() {
     return activity;
   }
-  
+
 }

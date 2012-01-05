@@ -7,14 +7,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.cannedapps.currencycalculator.app.InjectedTestRunner;
 import com.cannedapps.currencycalculator.app.models.Currency;
 import com.cannedapps.currencycalculator.app.models.Currency.Currencies;
 import com.cannedapps.currencycalculator.app.views.CalculatorActivityMockProvider;
 import com.cannedapps.currencycalculator.util.MathUtil;
 import com.google.inject.Inject;
+import com.xtremelabs.robolectric.RobolectricTestRunner;
 
-@RunWith(InjectedTestRunner.class)
+@RunWith(RobolectricTestRunner.class)
 public class CalculatorPresenterTest {
 
   @Inject CalculatorPresenter presenter;
